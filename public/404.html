@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>KALI // Redirecting...</title>
+    <script>
+      (function () {
+        var routes = ['admin', 'login', 'signin', 'menu', 'cellar', 'events', 'press', 'book', 'booking', 'contact', 'chef'];
+        var pathname = window.location.pathname;
+        var segments = pathname.split('/').filter(Boolean);
+        var last = segments.length > 0 ? segments[segments.length - 1].toLowerCase() : '';
+        if (routes.indexOf(last) !== -1) {
+          var base = '/' + segments.slice(0, -1).join('/');
+          if (base !== '/') base += '/';
+          window.location.replace(base + '#' + last + window.location.search);
+        } else {
+          window.location.replace('./');
+        }
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

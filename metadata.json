@@ -1,0 +1,6 @@
+{
+  "name": "kali - Luxury Dining & Admin Suite",
+  "description": "Experience modern culinary alchemy at kali with seasonal menus, table reservations, and secure password-protected administrator management panel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
